@@ -1,0 +1,3 @@
+La memoria funciona almacenando con M+ los valores del
+cuadro de texto superior. Una vez apretado el botón, cada vez que se vuelva
+a apretar volcará el valor almacenado hasta que se apriete M- para borrarlo.

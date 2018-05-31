@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Pelayo Díaz Soto"/>
+    <meta name="description" content="Juego Web realizado para la asignatura de Software y Estándares para la Web"/>
+    
+    <title>ECMAScript - Juego de Memoria</title>
+    <link rel="stylesheet" type="text/css" href="Cartas.css" />
+    <script src="Cartas.js"></script>
+</head>
+<body>
+    <h1>Juego de Memoria</h1>
+    <h2>Encuentra la Pareja de cada Carta</h2>
+      <div id="juego">
+          <table>
+        <tr>
+          <td id="0" onclick="juego.girarCarta()" data-valor="valor">?</td>
+          <td id="1" onclick="juego.girarCarta()" data-valor="valor">?</td>
+          <td id="2" onclick="juego.girarCarta()" data-valor="valor">?</td>
+          <td id="3" onclick="juego.girarCarta()" data-valor="valor">?</td>
+        </tr>
+        <tr>
+          <td id="4" onclick="juego.girarCarta()" data-valor="valor">?</td>
+          <td id="5" onclick="juego.girarCarta()" data-valor="valor">?</td>
+          <td id="6" onclick="juego.girarCarta()" data-valor="valor">?</td>
+          <td id="7" onclick="juego.girarCarta()" data-valor="valor">?</td>
+        </tr>
+        <tr>
+          <td id="8" onclick="juego.girarCarta()" data-valor="valor">?</td>
+          <td id="9" onclick="juego.girarCarta()" data-valor="valor">?</td>
+          <td id="10" onclick="juego.girarCarta()" data-valor="valor">?</td>
+          <td id="11" onclick="juego.girarCarta()" data-valor="valor">?</td>
+        </tr>
+        <tr>
+          <td id="12" onclick="juego.girarCarta()" data-valor="valor">?</td>
+          <td id="13" onclick="juego.girarCarta()" data-valor="valor">?</td>
+          <td id="14" onclick="juego.girarCarta()" data-valor="valor">?</td>
+          <td id="15" onclick="juego.girarCarta()" data-valor="valor">?</td>
+        </tr>
+            </table>
+      </div>
+  <p id="centrar">
+    <input type="button" value="Iniciar" onclick="juego.iniciarJuego()" />    
+    <input type="button" value="Reset" onclick="juego.asignaValores(1)" />
+  </p>
+    <p>
+        Número de Intentos: <input type="text" id="texto" value="0" disabled/>
+    </p>
+    
+    <footer>
+      <a href="https://validator.w3.org/check?uri=referer"><img
+          src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png"
+          alt="HTML5 Válido" title="HTML5 Válido" height="64" width="63" /></a>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="¡CSS Válido!" /></a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Pelayo Díaz Soto"/>
+    <meta name="description" content="Ejercicio 4 de la tarea entrable obligatoria de JQuery"/> 
+    <title>JQuery - Ejercicio 5</title>
+    <link rel="stylesheet" type="text/css" href="Ejercicio5.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Ejercicio5.js"></script>
+</head>
+<body>
+    <h1>Juego de Agilidad Mental</h1>
+    <h2>Presiona el Color</h2>
+    <p id="timer">30</p>
+    <p id="color">color</p>
+    <div id="juego">
+    <table>
+        <tr>
+          <td id="0" onclick="juego.check(0)" data-valor="valor">Color</td>
+        </tr>
+        <tr>
+          <td id="1" onclick="juego.check(1)" data-valor="valor">Color</td>
+        </tr>
+     </table>
+      </div>
+    <p>
+        <input type="button" id="boton" value="Iniciar" onclick="juego.iniciarJuego()" />
+        Puntos: <input type="text" id="texto" value="0" disabled/>
+    </p>
+
+    <footer>
+      <a href="https://validator.w3.org/check?uri=referer"><img
+          src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png"
+          alt="HTML5 Válido" title="HTML5 Válido" height="64" width="63" /></a>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="¡CSS Válido!" /></a>
+    </footer>
+</body>
+</html>

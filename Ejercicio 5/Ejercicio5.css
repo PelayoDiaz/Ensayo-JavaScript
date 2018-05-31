@@ -1,0 +1,74 @@
+h1 {
+    font: 50px "Courier New", sans-serif;
+    background: linear-gradient(to bottom right,#d4e4ef, #86aecc); 
+    color: #fff;
+    text-transform: uppercase;
+    padding: 75px 25px;
+    text-align: center;
+    margin: 0px;
+  }
+
+h2 {
+    margin: 5px 0px;
+    text-align: center;
+    font-family: "Arial Black", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    background: linear-gradient(to left,#49a5e5, #5e89ac);
+    border-radius:5px 5px 5px 5px
+}
+p:first-of-type{
+    font-family: "Arial Black", sans-serif;
+    font-size: 50px;
+    margin: 2px;
+    background-color: lightgray;
+}
+
+p:nth-of-type(2){
+    text-transform: uppercase;
+    font-family: "Arial Black", sans-serif;
+    font-size: 30px;
+    margin: 2px;
+    background-color: azure;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+}
+
+td {
+    width: 25%;
+    height: 25%;
+    background-color: #e6dfdf;
+    border-radius: 10px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+}
+
+p:last-of-type{
+    font-family: "Arial Black", sans-serif;
+    font-size: 15px;
+    margin: 2px;
+    background-color: lightgray;
+}
+
+p {
+    border-radius:50px;
+    text-align: center;
+    width: 100%;
+}
+
+p:last-of-type input {
+    height: 20px;
+    width: 50px;
+}
+
+footer {
+    margin: 8px;
+    padding: 20px 20px;
+    background: linear-gradient(to bottom right,#d4e4ef, #86aecc);
+    text-align: center;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Pelayo Díaz"/>
+    <meta name="description" content="Calculadora básica"/>
+    
+    <title>ECMAScript - Calculadora Básica</title>
+    <link rel="stylesheet" type="text/css" href="CalculadoraCientifica.css" />
+    <script src="CalculadoraCientifica.js"></script>
+</head>
+    <body>
+    <h1>Calculadora Científica</h1>
+    <h2>Presione los diferentes botones para realizar una operación.</h2>
+    <p>
+        <input id="resultado" type="text" disabled/>
+    </p>
+    <p>
+        <input id="operacion" type="text" />
+    </p>
+    <HR>
+    <p>
+        <input type="button" value="M+" onclick="calculadora.memorice()" />
+        <input type="button" value="M-" onclick="calculadora.forget()"/>
+        <input type="button" value="e" onclick="calculadora.addCaracter('E')" />
+        <input type="button" value="π" onclick="calculadora.addCaracter('PI')" />
+    </p>
+    <p>
+        <input type="button" value="x^2" onclick="calculadora.addCaracter('**2')" />
+        <input type="button" value="x^y" onclick="calculadora.addCaracter('**')"/>
+        <input type="button" value="log" onclick="calculadora.addCaracter('log(')" />
+        <input type="button" value="ln" onclick="calculadora.addCaracter('ln(')" />
+    </p>
+    <p>
+        <input type="button" value="sin" onclick="calculadora.addCaracter('sin(')" />
+        <input type="button" value="cos" onclick="calculadora.addCaracter('cos(')"/>
+        <input type="button" value="tan" onclick="calculadora.addCaracter('tan(')" />
+        <input type="button" value="√" onclick="calculadora.addCaracter('sqrt(')" />
+    </p>
+    <HR>
+
+    <p>
+        <input type="button" value="(" onclick="calculadora.addCaracter('(')" />
+        <input type="button" value=")" onclick="calculadora.addCaracter(')')"/>
+        <input type="button" value="DEL" onclick="calculadora.borrarUltimo()" />
+        <input type="button" value="AC" onclick="calculadora.borrarTodo()" />
+    </p>
+    <p>
+        <input type="button" value="7" onclick="calculadora.addCaracter(7)" />
+        <input type="button" value="8" onclick="calculadora.addCaracter(8)" />
+        <input type="button" value="9" onclick="calculadora.addCaracter(9)" />
+        <input type="button" value="/" onclick="calculadora.addCaracter('/')" />
+    </p>
+    <p>
+        <input type="button" value="4" onclick="calculadora.addCaracter(4)" />
+        <input type="button" value="5" onclick="calculadora.addCaracter(5)" />
+        <input type="button" value="6" onclick="calculadora.addCaracter(6)" />
+        <input type="button" value="*" onclick="calculadora.addCaracter('*')" />
+    </p>
+    <p>
+        <input type="button" value="1" onclick="calculadora.addCaracter(1)" />
+        <input type="button" value="2" onclick="calculadora.addCaracter(2)" />
+        <input type="button" value="3" onclick="calculadora.addCaracter(3)" />
+        <input type="button" value="-" onclick="calculadora.addCaracter('-')" />
+    </p>
+    <p>
+        <input type="button" value="0" onclick="calculadora.addCaracter(0)" />
+        <input type="button" value="." onclick="calculadora.addCaracter('.')" />
+        <input type="button" value="=" onclick="calculadora.getResultado() "/>
+        <input type="button" value="+" onclick="calculadora.addCaracter('+')"/>
+    </p>
+    <footer>
+      <a href="https://validator.w3.org/check?uri=referer"><img
+          src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png"
+          alt="HTML5 Válido" title="HTML5 Válido" height="64" width="63" /></a>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="¡CSS Válido!" /></a>
+    </footer>
+</body>
+</html>
